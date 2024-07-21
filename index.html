@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Регистрация</h2>
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="firstName">Имя</label>
+                <input type="text" class="form-control" id="firstName" required>
+                <div class="invalid-feedback">Пожалуйста, введите корректное имя.</div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Фамилия</label>
+                <input type="text" class="form-control" id="lastName" required>
+                <div class="invalid-feedback">Пожалуйста, введите корректную фамилию.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Пожалуйста, введите корректный email.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">Пароль должен быть не менее 8 символов и содержать минимум одну цифру, одну заглавную и одну строчную буквы и один специальный символ.</div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Подтверждение пароля</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+                <div class="invalid-feedback">Пароли должны совпадать.</div>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Дата рождения</label>
+                <input type="date" class="form-control" id="birthDate" required>
+                <div class="invalid-feedback">Вы должны быть старше 18 лет.</div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Отправить</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
